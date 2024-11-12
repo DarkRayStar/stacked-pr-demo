@@ -126,12 +126,11 @@ Here are some of the most commonly used `ghstack` commands:
     ghstack rebase --continue
     ```
 
+- **Note on SSH Configurations and URL Parsing**
 
-**Note on SSH Configurations and URL Parsing**
+   - ghstack might encounter issues when working with multiple SSH host configurations or custom SSH URLs. To avoid potential problems, it's recommended to use HTTPS URLs for your repositories.
 
-ghstack might encounter issues when working with multiple SSH host configurations or custom SSH URLs. To avoid potential problems, it's recommended to use HTTPS URLs for your repositories.
+   - By using HTTPS URLs, you can ensure that ghstack can correctly identify and interact with your repositories, regardless of your SSH configuration. 
 
-By using HTTPS URLs, you can ensure that ghstack can correctly identify and interact with your repositories, regardless of your SSH configuration. 
-
-**Example:**
-Instead of using `git@github.com:user/repo.git`, use `https://github.com/user/repo.git`.
+   - **Example:**
+     Instead of using `git@github.com:user/repo.git`, use `https://github.com/user/repo.git`.
